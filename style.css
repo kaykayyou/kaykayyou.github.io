@@ -1,0 +1,655 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Inter', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    overflow-x: auto;
+    position: relative;
+    min-width: 320px;
+    min-height: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.banner1 {
+    padding: 10px;
+    background-color: black;
+    display: flex;
+    width: 100%;
+}
+
+.bannericon {
+    flex: 30%;
+}
+
+.bannertext {
+    display: inline-flex;
+    color: #fff;
+    justify-self: flex-end;
+    align-self: center;
+}
+
+.txt2 {
+    display: none;
+}
+
+.head {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding-bottom: 10px;
+}
+
+.mobile {
+    display: none;
+}
+
+.nextjslogo {
+    display: grid;
+    grid-template-columns: 0.25fr 2.5fr 0.25fr;
+    padding: 20px;
+    align-items: center;
+}
+
+img {
+    width: 80px;
+    height: 40px;
+}
+
+.btn {
+    justify-self: end;
+    background-color: #0076ffe6;
+    color: #fff;
+    border: 1px solid #0076ffe6;
+    padding: 0.25rem 1rem;
+    margin: 0;
+    outline: none;
+    font-weight: 500;
+    border-radius: .2rem;
+    font-size: large;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #9ea09e;
+    justify-self: center;
+    font-weight: 500;
+}
+
+.git {
+    display: flex;
+}
+
+.git svg,
+.githublink svg {
+    margin-left: 20px;
+    align-self: center;
+    width: 22px;
+    height: 22px;
+}
+
+.fab {
+    align-self: center;
+    margin-left: 20px;
+}
+
+.banner2 {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.banner2 a {
+    margin-top: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+    background: #fafafa;
+    border: 2px solid #eaeaea;
+    border-radius: 8px;
+    padding: 5px 10px 10px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.newbut {
+    background: linear-gradient(90deg, #ed6292 25%, #ed5760 87.5%);
+    border-radius: 5px;
+    color: #fff;
+    padding: 1px 8px;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-right: 5px;
+}
+
+.main h1 {
+    font-size: 100px;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: -0.07em;
+    color: #111;
+    margin-bottom: 30px;
+}
+
+h1>span {
+    display: block;
+}
+
+.main h3 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    color: #6e756e
+}
+
+.headings {
+    margin-bottom: 50px;
+}
+
+.buttons {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    margin-bottom: 40px;
+}
+
+.btn3 {
+    margin: 0;
+    padding: 0 3.5rem;
+    height: 2.81rem;
+    line-height: 2.8rem;
+    border-radius: 7px;
+    background-color: #0070f3;
+    box-shadow: 0 4px 14px 0 #0076ff63;
+    color: #ffffff;
+}
+
+.btn4 {
+    background: #fff;
+    color: #696969;
+    box-shadow: 0 4px 14px 0 #0000001a;
+    margin: 0;
+    padding: 0 3.5rem;
+    height: 2.81rem;
+    line-height: 2.8rem;
+    border-radius: 7px;
+    border: none;
+    justify-self: start;
+}
+
+.btn4:hover {
+    background: #ffffffe6;
+    box-shadow: 0 6px 20px #5d5d5d3b;
+}
+
+.link {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.mit {
+    color: #6e756e;
+    justify-self: end;
+}
+
+.btn5 {
+    background-color: #fff;
+    justify-self: start;
+    color: #0076ffe6;
+    border: none;
+}
+
+.btn5:hover {
+    background: #ffffffe6;
+    box-shadow: 0 6px 20px #5d5d5d3b;
+}
+
+.mid1 h2 {
+    font-size: 2rem;
+    letter-spacing: -1px;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.mid1 h3 {
+    text-align: center;
+    color: #6e756e;
+    font-weight: 400;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 2em;
+    align-items: center;
+    margin: 20px;
+}
+
+.box {
+    border: 1px solid #eaeaea;
+    padding: 24px;
+    border-radius: 2px;
+    text-align: left;
+}
+
+.box h3 {
+    color: #111;
+    line-height: 1.4;
+    font-weight: 600;
+    font-size: 1.125em;
+}
+
+.box a {
+    color: #0070f3;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.box:hover {
+    background: #ffffffe6;
+    box-shadow: 0 6px 20px #5d5d5d3b;
+}
+
+.mid2 {
+    text-align: center;
+    margin: 40px auto;
+    font-size: 14px;
+}
+
+.mid2 a {
+    color: #0070f3;
+    text-decoration: none;
+}
+
+.slider {
+    padding: 100px;
+    border: 1px solid #eaeaea;
+}
+
+.hulu {
+    margin-top: -2.5rem;
+    margin-bottom: 4rem;
+}
+
+.hulubtn {
+    display: flex;
+    padding: 16px;
+    box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+    max-width: 450px;
+    height: 72px;
+    margin: 0 auto 4rem auto;
+    background-color: #fff;
+}
+
+.hulubtn button {
+    margin: 0;
+    padding: 0 3.5rem;
+    height: 2.81rem;
+    line-height: 2.8rem;
+    border-radius: 7px;
+    background-color: #0070f3;
+    box-shadow: 0 4px 14px 0 rgba(0, 118, 255, 0.39);
+    color: white;
+    font-size: 16px;
+}
+
+.hululogo svg {
+    width: 120px;
+    height: 36px;
+    margin-right: 50px;
+}
+
+.hulu h2 {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: -1px;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.hulu h3 {
+    text-align: center;
+    color: #696969;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.images {
+    width: 100%;
+    margin: 0 auto;
+    padding: 6.25rem 0;
+    text-align: center;
+    background-color: #fafafa;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.imgs {
+    padding: 80px;
+}
+
+.imgbtn {
+    margin: 0;
+    padding: 0 3.5rem;
+    height: 2.81rem;
+    line-height: 2.8rem;
+    border-radius: 7px;
+    background-color: #0070f3;
+    box-shadow: 0 4px 14px 0 rgba(0, 118, 255, 0.39);
+    color: white;
+}
+
+.imgsbtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.ljs {
+    width: 100%;
+    margin: 0 auto;
+    padding: 6.25rem 1rem;
+    max-width: 1024px;
+    text-align: center;
+}
+
+.ljsh h3 {
+    text-align: center;
+    color: #696969;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.ljsh h2 {
+    color: #111;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: -1px;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.fig {
+    display: block;
+    text-align: center;
+    margin: 60px 0;
+}
+
+.ljsii {
+    margin: 0 auto;
+    width: 926px;
+    max-width: 100%;
+}
+
+.ljsi {
+    padding-bottom: 53.45572354211663%;
+    position: relative;
+}
+
+img {
+    height: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    margin: 3.5rem auto;
+    top: 0;
+    position: absolute;
+}
+
+.block {
+    width: 100%;
+    margin: 0 auto;
+    padding: 6.25rem 0;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    max-width: 1024px;
+}
+
+.side {
+    align-self: center;
+    justify-self: right;
+}
+
+.txt h2 {
+    font-size: 2rem;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 0.8rem;
+    color: #111;
+}
+
+.txt h2 span,
+.txt h3 span {
+    display: block;
+}
+
+.txt h3 {
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: left;
+    font-weight: 400;
+}
+
+.formdiv {
+    width: 240px;
+    max-width: 100%;
+}
+
+.side label {
+    background-color: transparent;
+    display: flex;
+    border-radius: 8px;
+    border: 1px solid #999;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.side input {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #000;
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    font-family: 'Inter', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    padding: 4px 0;
+    margin: 0 auto;
+    height: 37px;
+    line-height: 27px;
+    width: 100%;
+    box-shadow: none;
+}
+
+.iptspan {
+    margin: 0 14px;
+    display: inline-flex;
+}
+
+.iptdiv {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 37px;
+    line-height: 37px;
+}
+
+.subs {
+    height: 45px;
+    margin: 10px 0;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+.subs:hover {
+    background-color: transparent;
+    border-color: #000;
+    color: #000;
+    outline: none;
+}
+
+.end {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0;
+    background-color: #fafafa;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    overflow: hidden;
+}
+
+.last {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 1024px;
+}
+
+.footer {
+    padding: 2rem 0 4rem;
+    min-height: 400px;
+}
+
+.fgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 2rem;
+}
+
+.fgrid h4 {
+    margin-bottom: 0.78rem;
+    font-size: 0.888888em;
+    font-weight: 500;
+    color: #111;
+}
+
+.fgrida {
+    font-size: 0.888888em;
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+.fgrida:hover {
+    color: #000;
+}
+
+.logofoot {
+    margin-top: 3rem;
+}
+
+.cfoot {
+    font-size: 0.7901234567901234em;
+    color: #8c8c8c;
+    margin-top: .9rem;
+}
+
+@media (max-width: 600px) {
+    .banner1 {
+        width: 100%;
+        font-size: 14px;
+    }
+    .bannertext {
+        display: none;
+    }
+    .txt2 {
+        display: inline-flex;
+        color: #fff;
+        justify-self: flex-end;
+        align-self: center;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .nextjslogo {
+        grid-template-columns: 1fr 1fr;
+    }
+    .nav {
+        grid-template-columns: repeat(7, 1fr);
+        grid-gap: 1rem;
+        margin: 0 10px;
+    }
+    .banner2 {
+        padding: 0 1rem;
+    }
+    .headings h1 {
+        font-weight: 800;
+        font-size: 48px;
+        letter-spacing: -0.06em;
+        line-height: 1.2;
+        margin: 30px auto;
+    }
+    .headings h3 {
+        font-size: 16px;
+    }
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 1fr);
+    }
+    .mid2 {
+        display: none;
+    }
+    .hulubtn {
+        flex-direction: column;
+        justify-items: center;
+        width: 100%;
+        height: auto;
+    }
+    .hululogo {
+        align-self: center;
+        padding-bottom: 20px;
+    }
+    .hulu h3 span {
+        display: block;
+        text-align: center;
+    }
+    .contact {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .txt h2,
+    .txt h3 {
+        text-align: center;
+    }
+    .side {
+        justify-self: center;
+    }
+    .fgrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
