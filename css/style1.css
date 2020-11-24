@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+}
+
+ :root {
+    --white: #fff;
+    --offwhite: #f3f3f370;
+    --offblack: #a7a5a5b2;
+    --font: 0.866rem;
+    --notblack: #111111d0;
+}
+
+.butn {
+    padding: 8px;
+    background-color: blue;
+    border: none;
+    font-family: inherit;
+    color: white;
+    width: 100%;
+}
+
+a {
+    color: #222;
+}
+
+body {
+    margin: 0px;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 4rem;
+    background-color: var(--white);
+    font-size: var(--font);
+    color: var(--notblack);
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    background-color: var(--white);
+}
+
+.main1,
+.main2 {
+    flex: 50%;
+    padding: 2rem 0;
+}
+
+.main2 {
+    background-color: var(--offwhite);
+    padding: 2rem;
+    overflow-x: auto;
+}
+
+.nav {
+    font-weight: bolder;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: var(--offblack)
+}
+
+.heading .headtext {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #111;
+}
+
+.headtext span {
+    font-size: var(--font);
+    display: block;
+    color: var(--notblack);
+}
+
+.info,
+.check,
+.next {
+    display: flex;
+    align-items: center;
+}
+
+.info div {
+    margin: 0 20px 20px 0;
+}
+
+.info label {
+    display: block;
+}
+
+.info input {
+    padding: .467rem;
+    border: 0.1rem solid var(--offblack);
+    margin-top: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+.msg {
+    display: block;
+    font-size: small;
+    color: #ff0000;
+}
+
+.cbtext {
+    margin-left: 1rem;
+}
+
+.check {
+    margin: 2rem 0 4rem 0;
+}
+
+.backcart,
+.btn {
+    flex: 50%;
+    margin-right: 2rem;
+    padding: 20px 0;
+}
+
+.next {
+    margin-bottom: 4rem;
+}
+
+table {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.tabhead1 th,
+.tabhead2 th {
+    padding-bottom: 3rem;
+}
+
+.ycart {
+    color: #c1c1c1;
+}
+
+.itemname span {
+    display: block;
+}
+
+.imgshock img {
+    width: 40px;
+    height: auto;
+}
+
+.title span {
+    display: block;
+    font-weight: 600;
+}
+
+.cp,
+.editcart {
+    text-align: right;
+}
+
+.itemprop td {
+    padding-bottom: 1rem;
+}
+
+tbody tr :nth-last-child() {
+    text-align: left;
+}
+
+.middle .div1,
+.middle .div2 {
+    display: flex;
+    align-self: start;
+    font-size: large;
+}
+
+.div1 i,
+.div2 i {
+    margin-right: 1rem;
+}
+
+.dandt,
+.randt {
+    font-weight: bold;
+}
+
+.dandt span,
+.randt span {
+    display: block;
+    font-size: medium;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.div3 {
+    margin: 2rem 0;
+    font-size: var(--font);
+}
+
+.foot {
+    padding: 2rem 0;
+    display: flex;
+}
+
+.foot .foot1 {
+    flex: 55%;
+}
+
+.foot .foot2 {
+    flex: 49%;
+}
+
+.foot21 {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+    body {
+        padding: 2rem;
+    }
+    .main,
+    .info,
+    .next,
+    .foot {
+        flex-wrap: wrap;
+    }
+    .foot21 {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 580px) {
+    .nav {
+        flex-direction: column;
+    }
+}
