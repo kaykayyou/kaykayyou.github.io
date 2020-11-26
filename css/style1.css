@@ -226,6 +226,8 @@ tbody tr :nth-last-child() {
     .foot21 {
         flex-direction: column;
     }
+    .foot21 div{
+        padding: 0 1rem;
 }
 
 @media (max-width: 580px) {
