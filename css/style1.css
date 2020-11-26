@@ -89,11 +89,13 @@ body {
     display: block;
 }
 
-.info input {
+.info input,
+.info select {
     padding: 0.467rem;
     border: 0.1rem solid var(--offblack);
     margin-top: 0.5rem;
     border-radius: 0.2rem;
+    width: 11.7rem;
 }
 
 .msg {
