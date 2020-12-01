@@ -215,7 +215,7 @@ tbody tr :nth-last-child() {
 
 @media (max-width: 900px) {
     body {
-        padding: 2rem;
+        padding: 1rem;
     }
     .main,
     .info,
@@ -223,11 +223,33 @@ tbody tr :nth-last-child() {
     .foot {
         flex-wrap: wrap;
     }
+    .main1 {
+        padding: 0;
+    }
+    .info div,
+    .info input,
+    .info select {
+        width: 100%
+    }
+    .info div {
+        margin: 0 0 20px 0;
+    }
     .foot21 {
         flex-direction: column;
     }
-    .foot21 div{
-        padding:0 0 1rem 0;
+    .foot21 div {
+        padding: 0 0 1rem 0;
+    }
+    .main1,
+    .main2 {
+        flex: auto;
+    }
+    .next {
+        display: block;
+    }
+    .next .btn {
+        margin: 0;
+    }
 }
 
 @media (max-width: 580px) {
