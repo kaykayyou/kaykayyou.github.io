@@ -92,9 +92,10 @@ body {
     margin-left: 4rem;
 }
 
-.chckbxs {
+
+/* .chckbxs {
     margin-bottom: 3rem;
-}
+} */
 
 .check,
 .next {
@@ -204,19 +205,31 @@ tbody tr :nth-last-child() {
 
 @media (max-width: 900px) {
     body {
-        padding: 2rem;
+        padding: 1rem;
     }
     .main,
     .info,
-    .next,
     .foot {
         flex-wrap: wrap;
+    }
+    .main1 {
+        padding: 0rem;
     }
     .foot21 {
         flex-direction: column;
     }
     .foot21 div {
         padding: 0 0 1rem 0;
+    }
+    .main1,
+    .main2 {
+        flex: auto;
+    }
+    .next {
+        display: block;
+    }
+    .next .btn {
+        margin: 0;
     }
 }
 
