@@ -6,7 +6,6 @@
     <title>Check Out</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="css/style1.css">
-    <script src="javascript/confirm.js"></script>
 </head>
 
 <body>
@@ -16,7 +15,7 @@
                 <div class="navbar">
                     <nav class="nav">
                         <div>
-                            <a class="link" style="color:blue;" href="index.html">1. Information</a>
+                            <a class="link" href="index.html" style="color:blue;">1. Information</a>
                         </div>
                         <div>
                             <a class="link" href="delivery.html">2. Delivery</a>
@@ -37,81 +36,84 @@
                 </div>
                 <form class="forminfo" name="checkout" action="delivery.html" onsubmit="return validateForm()" method="POST">
                     <div class="info">
-                        <div class="name1">
+                        <div class="name1 fchild">
                             <label for="fname">First Name</label>
-                            <input type=text class="firstname" name="fName" id="fname" placeholder="Type first name">
-                            <span class="msg" id="fn"></span>
+                            <input type=text class="input-name firstname" name="fName" id="fname" placeholder="Type first name">
+                            <div class="err-msg"></div>
                         </div>
-                        <div class="name2">
+                        <div class="name2  schild">
                             <label for="lname">Last Name</label>
-                            <input type=text class="lastname" name="lName" id="lname" placeholder="Type last name">
-                            <span class="msg" id="ln"></span>
+                            <input type=text class="input-name lastname" name="lName" id="lname" placeholder="Type last name">
+                            <div class="err-msg"></div>
                         </div>
                     </div>
                     <div class="info">
-                        <div class="phone">
+                        <div class="phone fchild">
                             <label for="phno">Phone Number</label>
-                            <input name="Telephone" class="phonenumber" id="phno" placeholder="Type Phone Number">
-                            <span class="msg" id="phn"></span>
+                            <input name="Telephone" class="phone-number" id="phno" placeholder="Type Phone Number">
+                            <div class="err-msg"></div>
                         </div>
-                        <div class="email">
+                        <div class="email schild">
                             <label for="emid">Email</label>
                             <input name="EMail" class="mailid" id="emid" placeholder="Type Email">
-                            <span class="msg" id="eid"></span>
+                            <div class="err-msg"></div>
                         </div>
                     </div>
-                    <div class="info">
+                    <div class="info fchild">
                         <div class="Address1">
                             <label for="add1">Address 1</label>
-                            <input name="Address2" type=text class="ad1" id="add1" placeholder="Type Address">
-                            <span class="msg" id="adr1"></span>
+                            <input name="Address2" type=text class="input-name ad1" id="add1" placeholder="Type Address">
+                            <div class="err-msg"></div>
                         </div>
-                        <div class="Address2">
+                        <div class="Address2 schild">
                             <label for="add2">Address 2</label>
-                            <input name="Address1" type=text class="ad2" id="add2" placeholder="Type Address">
-                            <span class="msg" id="adr2"></span>
+                            <input name="Address1" type=text class="input-name ad2" id="add2" placeholder="Type Address">
+                            <div class="err-msg"></div>
                         </div>
                     </div>
-                    <div class="info">
-                        <div class="zcode">
+                    <div class="info fchild">
+                        <div class="zcode fchild">
                             <label for="zicode">Zip Code</label>
                             <input name="ZipCode" type=text class="zipcode" id="zicode" placeholder="Type city">
-                            <span class="msg" id="zpc"></span>
+                            <div class="err-msg"></div>
                         </div>
-                        <div class="city">
+                        <div class="city schild">
                             <label for="ncity">City</label>
-                            <select name="City" type=text class="cityname" id="ncity" placeholder="Select City">
-                                <option value="">Bangalore</option>
-                                <option value="volvo">Mumbai</option>
-                                <option value="saab">Chennai</option>
-                                <option value="mercedes">Cochin</option>
-                                <option value="audi">Panjim</option>
+                            <select name="City" type=text class="select cityname" id="ncity" placeholder="Select City">
+                                <option value=""></option>
+                                <option value="blr">Bangalore</option>
+                                <option value="mum">Mumbai</option>
+                                <option value="che">Chennai</option>
+                                <option value="cchn">Cochin</option>
+                                <option value="pjm">Panjim</option>
                             </select>
-                            <span class="msg" id="cty"></span>
+                            <div class="err-msg"></div>
                         </div>
                     </div>
                     <div class="info">
-                        <div class="country">
+                        <div class="country fchild">
                             <label for="counti">Country</label>
-                            <select name="Country" type="text" class="countryname" id="counti" placeholder="Select Country">
-                                <option value="">India</option>
-                                <option value="volvo">Pakistan</option>
-                                <option value="saab">Srilanka</option>
-                                <option value="mercedes">Bangldesh</option>
-                                <option value="audi">China</option>
+                            <select name="Country" type="text" class="select countryname" id="counti" placeholder="Select Country">
+                                <option value=""></option>
+                                <option value="ind">India</option>
+                                <option value="pk">Pakistan</option>
+                                <option value="sl">Srilanka</option>
+                                <option value="bd">Bangldesh</option>
+                                <option value="ch">China</option>
                             </select>
-                            <span class="msg" id="cnty"></span>
+                            <div class="err-msg"></div>
                         </div>
-                        <div class="state">
+                        <div class="state schild">
                             <label for="statei">State</label>
-                            <select name="State" type="" class="statename" id="statei" placeholder="Select state">
-                                <option value="">Karnataka</option>
-                                <option value="volvo">Maharashtra</option>
-                                <option value="saab">Tamil Nadu</option>
-                                <option value="mercedes">Kerala</option>
-                                <option value="audi">Goa</option>
+                            <select name="State" type="" class="select statename" id="statei" placeholder="Select state">
+                                <option value=""></option>
+                                <option value="kar">Karnataka</option>
+                                <option value="mh">Maharashtra</option>
+                                <option value="tn">Tamil Nadu</option>
+                                <option value="ke">Kerala</option>
+                                <option value="ga">Goa</option>
                             </select>
-                            <span class="msg" id="stt"></span>
+                            <div class="err-msg"></div>
                         </div>
                     </div>
                     <div class="check">
@@ -216,6 +218,7 @@
             </div>
         </div>
     </footer>
+    <script src="javascript/confirm.js"></script>
 </body>
 
 </html>
