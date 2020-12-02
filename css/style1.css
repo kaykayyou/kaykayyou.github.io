@@ -26,7 +26,7 @@ a {
 body {
     margin: 0px;
     font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    padding: 4rem;
+    padding: 0 4rem;
     background-color: var(--white);
     font-size: var(--font);
     color: var(--notblack);
@@ -36,6 +36,8 @@ body {
 .main {
     display: flex;
     background-color: var(--white);
+    max-width: 1400px;
+    margin: auto;
 }
 
 .main1,
@@ -213,6 +215,17 @@ tbody tr :nth-last-child() {
     justify-content: space-between;
 }
 
+.err-msg {
+    margin-top: .5rem;
+    font-size: .6rem;
+    color: #ff0000;
+}
+
+.schild,
+.fchild {
+    align-self: flex-start;
+}
+
 @media (max-width: 900px) {
     body {
         padding: 1rem;
@@ -232,7 +245,8 @@ tbody tr :nth-last-child() {
         width: 100%
     }
     .info div {
-        margin: 0 0 20px 0;
+        margin: 0 20px 0 0;
+        padding: 10px 0 5px 0;
     }
     .foot21 {
         flex-direction: column;
