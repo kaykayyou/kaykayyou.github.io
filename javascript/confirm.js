@@ -3,6 +3,7 @@ let phone = document.getElementById('phno');
 let email = document.getElementById('emid');
 let zipcode = document.getElementById('zicode');
 let selectItem = document.getElementsByClassName('select');
+let check = document.getElementById('addcheck');
 
 for (var i = 0; i < inputs.length; i++) {
     inputs[i].addEventListener('input', (e) => {
@@ -62,12 +63,19 @@ zipcode.addEventListener('input', (e) => {
     }
 })
 
-function selection() {
-    if (selectItem.value == "") {
-        selectItem.nextElementSibling.innerHTML = "Please select an option";
-        return false;
-    } else {
-        selectItem.nextElementSibling.innerHTML = "";
-        return true;
-    }
+for (var i = 0; i < selectItem.length; i++) {
+    selectItem[i].addEventListener('click', (e) => {
+        if (e.target.value == "") {
+            e.target.nextElementSibling.innerHTML = "Please select an option";
+            return false;
+        } else {
+            e.target.nextElementSibling.innerHTML = "";
+            return true;
+        }
+    })
 }
+
+// if (!this.form.checkbox.checked) {
+//     check.innerHTML = 'You must agree to the terms first.';
+//     return false
+// }
