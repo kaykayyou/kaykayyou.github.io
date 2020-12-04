@@ -5,15 +5,15 @@ let zipcode = document.getElementById('zicode');
 let selectItem = document.getElementsByClassName('select');
 let check = document.getElementById('addcheck');
 
+
 for (var i = 0; i < inputs.length; i++) {
     inputs[i].addEventListener('input', (e) => {
-        if (e.target.value.length < 3) {
-            e.target.nextElementSibling.innerHTML = "Minimun of 3 characters are required";
+        if (e.target.value.length < 3 || e.target.value.length > 15) {
+            e.target.nextElementSibling.innerHTML = "Minimun of 3-15 characters are required";
             return false;
-        }
-        if (e.target.value.length > 3) {
+        } else if (e.target.value.length > 3 || e.target.value.length <= 15) {
             e.target.nextElementSibling.innerHTML = "";
-            return false;
+            return true;
         }
     })
 }
@@ -29,6 +29,7 @@ phone.addEventListener('input', (e) => {
             return false;
         } else {
             e.target.nextElementSibling.innerHTML = "";
+            return true;
         }
     }
 
@@ -44,6 +45,7 @@ email.addEventListener('input', (e) => {
             return false;
         } else {
             e.target.nextElementSibling.innerHTML = "";
+            return true;
         }
     }
 })
@@ -78,4 +80,6 @@ for (var i = 0; i < selectItem.length; i++) {
 // if (!this.form.checkbox.checked) {
 //     check.innerHTML = 'You must agree to the terms first.';
 //     return false
+// } else {
+//     check.innerHTML = "";
 // }
