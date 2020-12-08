@@ -215,6 +215,10 @@ tbody tr :nth-last-child() {
     .main1 {
         padding: 0rem;
     }
+    .foot {
+        text-align: center;
+        width: 100%;
+    }
     .foot21 {
         flex-direction: column;
     }
